@@ -1,0 +1,113 @@
+body
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+.page_container
+{
+    padding-top:70px ;
+    padding-bottom:70px ;
+    background-color: #3e5f81;
+}
+
+.page_container h1
+{
+    font-size: 50px;
+    font-weight:bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #039fca;
+}
+
+
+.first_page .progress-bar 
+{
+    background-image: linear-gradient(to left ,#4dabff 0%,#44d7ff 100%);
+    animation-name:progress_first ;
+    animation-duration:2s ;
+    color: #3e5f81;
+    font-size: 17px;
+}
+
+.page_container .first_page .btn_div , .page_container .second_page .btn_div , .page_container .third_page .btn_div 
+{
+    display: flex;
+    justify-content: center;
+
+}
+
+.page_container .first_page .btn_div .btn , .page_container .second_page .btn_div .btn , .page_container .third_page .btn_div .btn
+{
+    width: 25%;
+    background-image: linear-gradient(to left ,#4dabff 0%,#44d7ff 100%);
+    color: #3e5f81;
+    font-size: 18px;
+}
+
+ .first_page , .second_page , .third_page
+{
+    display: none;
+}
+
+.second_page .progress-bar 
+{
+    background-image: linear-gradient(to left ,#4dabff 0%,#44d7ff 100%);
+    animation-name:progress_second ;
+    animation-duration:2s ;
+    color: #3e5f81;
+    font-size: 17px;
+}
+
+.third_page .progress-bar 
+{
+    background-image: linear-gradient(to left ,#4dabff 0%,#44d7ff 100%);
+    animation-name:progress_third ;
+    animation-duration:2s ;
+    color: #3e5f81;
+    font-size: 17px;
+}
+
+.show
+{
+    display: block;
+}
+
+
+@keyframes progress_first
+{
+    from
+    {
+        width: 0%;
+    }
+
+    to
+    {
+        width: 25%;
+    }
+}
+
+@keyframes progress_second
+{
+    from
+    {
+        width: 0%;
+    }
+
+    to
+    {
+        width: 50%;
+    }
+}
+
+@keyframes progress_third
+{
+    from
+    {
+        width: 0%;
+    }
+
+    to
+    {
+        width: 100%;
+    }
+}
